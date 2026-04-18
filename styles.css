@@ -19,6 +19,10 @@ div {
     border-radius: 5px;
 }
 
+hr {
+    border-color: color-mix(in xyz, black, beige);
+}
+
 main {
     margin-left: 1in;
     margin-right: 1in;
@@ -26,7 +30,7 @@ main {
     margin-bottom: 20px;
 }
 
-p {
+p, form {
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -37,6 +41,16 @@ ol, ul {
 
 details {
     padding-left: 20px;
+}
+
+img {
+    display: inline-block;
+}
+
+video, audio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -57,7 +71,13 @@ footer {
 
 /* class used for highlighting unfinished business */
 .problem {
-    color: color(xyz 0.7 0 0.2)
+    color: color(xyz 0.7 0 0.2);
+    display: block;
+}
+
+/* class used for aligning solutions to unfinished business */
+.solution {
+    display: inline;
 }
 
 /* class used for styling subsection titles */
@@ -67,4 +87,11 @@ footer {
     margin-right: -15px;
     padding: 2px 15px 2px 15px;
     font-family: "zalando sans semiexpanded";
+}
+
+/* navigaton links */
+.link {
+    display: inline;
+    margin-left: -6pt;
+    margin-right: -6pt;
 }
