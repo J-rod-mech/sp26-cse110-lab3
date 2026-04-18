@@ -12,11 +12,16 @@ div {
     padding-right: 15px;
     padding-top: 1px;
     padding-bottom: 1px;
+    margin: auto;
+    border-style: ridge;
+    border-color: color-mix(in xyz, black, beige);
+    border-width: 1px;
+    border-radius: 5px;
 }
 
 main {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 1in;
+    margin-right: 1in;
     margin-top: 20px;
     margin-bottom: 5px;
 }
@@ -24,6 +29,10 @@ main {
 p {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+ol, ul {
+    line-height: 1.5;
 }
 
 details {
@@ -48,12 +57,7 @@ footer {
 
 /* class used for highlighting unfinished business */
 .problem {
-    color: color(xyz 1 0 0.6)
-}
-
-/* class used for highlighting finishing unfinished business */
-.solution {
-    color: color-mix(in xyz, green, darkgreen)
+    color: color(xyz 0.7 0 0.2)
 }
 
 /* class used for styling subsection titles */
