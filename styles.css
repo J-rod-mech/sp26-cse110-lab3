@@ -1,3 +1,7 @@
+* {
+    font-family: "Georgia";
+}
+
 body {
     background-color: rgb(255, 240, 192);
 }
@@ -19,6 +23,7 @@ main {
 
 p {
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 details {
@@ -31,6 +36,7 @@ header {
     padding: 8px 8px 16px 8px;
     color: hsl(0, 100%, 100%);
     text-align: center;
+    font-family: "zalando sans semiexpanded";
 }
 
 footer {
@@ -56,4 +62,5 @@ footer {
     margin-left: -15px;
     margin-right: -15px;
     padding: 2px 15px 2px 15px;
+    font-family: "zalando sans semiexpanded";
 }
