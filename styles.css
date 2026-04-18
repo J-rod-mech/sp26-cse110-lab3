@@ -1,7 +1,49 @@
 body {
-    background-color: rgb(255, 245, 213);
+    background-color: rgb(255, 240, 192);
 }
 
 div {
-    background-color: rgb(255, 240, 192);
+    background-color: rgba(253, 247, 229, 0.5);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+main {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+p {
+    padding-left: 20px;
+}
+
+details {
+    padding-left: 20px;
+}
+
+header {
+    background-color: #444;
+    margin: -8px -8px -8px -8px;
+    padding: 8px 8px 16px 8px;
+    color: hsl(0, 100%, 100%);
+    text-align: center;
+}
+
+footer {
+    background-color: #404040;
+    margin: -8px -8px -8px -8px;
+    padding: 8px 8px 16px 8px;
+    color: hsl(0, 100%, 100%);
+}
+
+.problem {
+    color: color(xyz 1 0 0.6)
+}
+
+.solution {
+    color: color-mix(in xyz, green, darkgreen)
 }
