@@ -40,10 +40,20 @@ footer {
     color: hsl(0, 100%, 100%);
 }
 
+/* class used for highlighting unfinished business */
 .problem {
     color: color(xyz 1 0 0.6)
 }
 
+/* class used for highlighting finishing unfinished business */
 .solution {
     color: color-mix(in xyz, green, darkgreen)
+}
+
+/* class used for styling subsection titles */
+.sub {
+    background-color: rgb(221, 169, 0);
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 2px 15px 2px 15px;
 }
