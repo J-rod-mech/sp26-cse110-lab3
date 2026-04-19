@@ -11,9 +11,7 @@
         padding-top: 10px;
       }
       nav {
-        text-align: center;
-        margin-left: -1in;
-        margin-right: -1in;
+        display: inline;
       }
     </style>
     <link rel="icon" href="favicon.ico">
@@ -31,16 +29,17 @@
     </header>
     <hr>
     <main>
-      <nav>
+      <section>
+        <nav id="navigation">
           <p class="link"><a href="#review">Review of Last Meeting</a></p>
           <p class="link"><a href="#unfinished">Unfinished Business</a></p>
           <p class="link"><a href="#new">New Ideas</a></p>
           <p class="link"><a href="#comments">Comments/Questions/Concerns</a></p>
           <p class="link"><a href="#diagrams">Diagrams</a></p>
           <p class="link"><a href="#brainsnacking">Brainsnacking</a></p>
-          <p class="link"><a href="#form">Interest Form</a></p>
-      </nav>
-      <br>
+          <p class="linklast"><a href="#form">Interest Form</a></p>
+        </nav>
+      </section>
       <hr>
       <br>
       <div>
@@ -133,8 +132,12 @@
       <div>
         <section id="diagrams">
           <h2 class="sub">Diagrams</h2>
-          <img src="diagram1.png" alt="Diagram 1">
-          <img src="diagram2.png" alt="Diagram 2">
+          <section id="imgflex">
+            <img src="diagram1.png" alt="Diagram 1" class="diagram">
+            <img src="diagram2.png" alt="Diagram 2" class="diagram">
+            <img src="diagram3.png" alt="Diagram 3" class="diagram">
+            <img src="diagram4.png" alt="Diagram 4" class="diagram">
+          </div>
         </section>
         <br>
       </div>
@@ -144,14 +147,17 @@
       <div>
         <section id="brainsnacking">
           <h2 class="sub">Brainsnacking</h2>
-          <video controls>
-            <source src="brainsnacking.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <audio controls>
-            <source src="brainsnacking.m4a" type="audio/mpeg">
-            Your browser does not support the audio tag.
-          </audio>
+          <section id="mediagrid">
+            <img src="menu.png" alt="Brainsnacking Menu" id="menu">
+            <video controls>
+              <source src="brainsnacking.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <audio controls>
+              <source src="brainsnacking.m4a" type="audio/mpeg">
+              Your browser does not support the audio tag.
+            </audio>
+          </section>
         </section>
         <br>
       </div>
