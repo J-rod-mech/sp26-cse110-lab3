@@ -1,5 +1,7 @@
 :root {
     --outline-color: color-mix(in xyz, black, beige);
+    --edge-color: #444;
+    --background-color: rgb(255, 240, 192);
 }
 
 * {
@@ -7,7 +9,7 @@
 }
 
 body {
-    background-color: rgb(255, 240, 192);
+    background-color: var(--background-color, rgb(255, 240, 192));
 }
 
 div {
@@ -44,11 +46,12 @@ ol, ul {
 }
 
 details {
-    padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 details:hover {
-    background-color: color-mix(in xyz, lightgray, beige);
+    background-color: #e6d9c2;
 }
 
 details:active {
@@ -64,7 +67,7 @@ video, audio {
 }
 
 header {
-    background-color: #444;
+    background-color: var(--edge-color, #444);
     margin: -8px -8px -8px -8px;
     padding: 8px 8px 16px 8px;
     color: hsl(0, 100%, 100%);
@@ -73,7 +76,7 @@ header {
 }
 
 footer {
-    background-color: #404040;
+    background-color: var(--edge-color, #444);
     margin: -8px -8px -8px -8px;
     padding: 8px 8px 16px 8px;
     color: hsl(0, 100%, 100%);
@@ -121,8 +124,14 @@ footer {
     padding-bottom: 20px;
 }
 
+/* class used for adding margin to the bottom-most item in a section */
+.bottomitem {
+    margin-bottom: 20px;
+}
+
 #button {
     margin-left: 15pt;
+    position: static;
 }
 
 #imgflex {
@@ -142,6 +151,12 @@ footer {
 #navigation {
     display: flex;
     justify-content: center;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: var(--background-color, rgb(255, 240, 192));
 }
 
 #menu {
