@@ -43,14 +43,6 @@ details {
     padding-left: 20px;
 }
 
-img {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 38vw;
-    max-width: fit-content;
-}
-
 video, audio {
     display: block;
     justify-content: center;
@@ -98,10 +90,47 @@ footer {
 /* navigaton links */
 .link {
     display: inline;
-    margin-left: -6pt;
-    margin-right: -6pt;
+    margin-left: -15pt;
+    margin-right: 2pt;
+}
+
+/* last navigaton link */
+.linklast {
+    display: inline;
+    margin-left: -15pt;
+    margin-right: -15pt;
+}
+
+/* class used for formatting images in the diagram section */
+.diagram {
+    width: 35vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
 }
 
 #button {
     margin-left: 15pt;
+}
+
+#imgflex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#mediagrid {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+}
+
+#navigation {
+    display: flex;
+    justify-content: center;
+}
+
+#menu {
+    max-height: 100vh;
 }
