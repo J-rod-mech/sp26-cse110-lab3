@@ -1,3 +1,7 @@
+:root {
+    --outline-color: color-mix(in xyz, black, beige);
+}
+
 * {
     font-family: "Georgia";
 }
@@ -14,13 +18,13 @@ div {
     padding-bottom: 1px;
     margin: auto;
     border-style: ridge;
-    border-color: color-mix(in xyz, black, beige);
+    border-color: var(--outline-color, color-mix(in xyz, black, beige));
     border-width: 1px;
     border-radius: 5px;
 }
 
 hr {
-    border-color: color-mix(in xyz, black, beige);
+    border-color: var(--outline-color, color-mix(in xyz, black, beige));
 }
 
 main {
@@ -48,7 +52,7 @@ details:hover {
 }
 
 details:active {
-    background-color: color-mix(in xyz, black, beige);
+    background-color: var(--outline-color, color-mix(in xyz, black, beige));
 }
 
 video, audio {
