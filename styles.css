@@ -122,8 +122,9 @@ footer {
 
 #mediagrid {
     display: grid;
+    grid-template-columns: 1fr;
     gap: 20px;
-    justify-content: center;
+    justify-items: center;
 }
 
 #navigation {
