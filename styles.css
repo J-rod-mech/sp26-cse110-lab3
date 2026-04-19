@@ -43,6 +43,14 @@ details {
     padding-left: 20px;
 }
 
+details:hover {
+    background-color: color-mix(in xyz, lightgray, beige);
+}
+
+details:active {
+    background-color: color-mix(in xyz, black, beige);
+}
+
 video, audio {
     display: block;
     justify-content: center;
