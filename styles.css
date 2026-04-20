@@ -30,10 +30,27 @@ hr {
 }
 
 main {
-    margin-left: 1in;
-    margin-right: 1in;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+img {
+    width: 800px;
+}
+
+@media (min-width: 1000px) {
+    main {
+        margin-left: 1in;
+        margin-right: 1in;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 450px;
+    }
 }
 
 p, form {
@@ -63,7 +80,7 @@ video, audio {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 80vw;
 }
 
 header {
@@ -73,6 +90,7 @@ header {
     color: hsl(0, 100%, 100%);
     text-align: center;
     font-family: "zalando sans semiexpanded";
+    height: 33vh;
 }
 
 footer {
@@ -118,7 +136,6 @@ footer {
 
 /* class used for formatting images in the diagram section */
 .diagram {
-    width: 35vw;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 20px;
@@ -139,11 +156,11 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 #mediagrid {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 20px;
     justify-items: center;
 }
@@ -161,5 +178,5 @@ footer {
 
 #menu {
     height: 100%;
-    max-height: 100vh;
+    max-height: 58vw;
 }
