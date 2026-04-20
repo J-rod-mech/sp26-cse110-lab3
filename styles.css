@@ -8,6 +8,10 @@
     font-family: "Georgia";
 }
 
+html {
+    font-size: 2rem;
+}
+
 body {
     background-color: var(--background-color, rgb(255, 240, 192));
 }
@@ -38,19 +42,6 @@ main {
 
 img {
     width: 800px;
-}
-
-@media (min-width: 1000px) {
-    main {
-        margin-left: 1in;
-        margin-right: 1in;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    img {
-        width: 450px;
-    }
 }
 
 p, form {
@@ -91,6 +82,7 @@ header {
     text-align: center;
     font-family: "zalando sans semiexpanded";
     height: 33vh;
+    max-height: 450px;
 }
 
 footer {
@@ -168,6 +160,7 @@ footer {
 #navigation {
     display: flex;
     justify-content: center;
+    font-size: 0.6em;
 }
 
 #navbar {
@@ -179,4 +172,25 @@ footer {
 #menu {
     height: 100%;
     max-height: 58vw;
+}
+
+@media (min-width: 1000px) {
+    html {
+        font-size: 1rem;
+    }
+    
+    main {
+        margin-left: 1in;
+        margin-right: 1in;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 450px;
+    }
+
+    #navigation {
+        font-size: 1em;
+    }
 }
