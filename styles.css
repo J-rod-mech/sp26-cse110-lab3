@@ -74,7 +74,7 @@ video, audio {
     max-width: 80vw;
 }
 
-header {
+body header {
     background-color: var(--edge-color, #444);
     margin: -8px -8px -8px -8px;
     padding: 8px 8px 16px 8px;
@@ -127,9 +127,8 @@ select {
     display: block;
 }
 
-/* class used for aligning solutions to unfinished business */
-.solution {
-    display: inline;
+.problem + p {
+    padding-bottom: 20px;
 }
 
 /* class used for styling subsection titles */
@@ -141,17 +140,17 @@ select {
     font-family: "zalando sans semiexpanded";
 }
 
-/* navigaton links */
+/* first navigaton links */
 .link {
     display: inline;
     margin-left: -15pt;
-    margin-right: 2pt;
+    margin-right: -15pt;
 }
 
-/* last navigaton link */
-.linklast {
+/* subsequent navigaton links */
+.link ~ .link {
     display: inline;
-    margin-left: -15pt;
+    margin-left: 2pt;
     margin-right: -15pt;
 }
 
