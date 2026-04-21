@@ -92,6 +92,31 @@ footer {
     color: hsl(0, 100%, 100%);
 }
 
+input {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+input[id] {
+    width: 24em;
+    height: 2em;
+}
+
+input[type="submit"] {
+    width: 6em;
+    height: 2em;
+    font-size: 0.6em;
+}
+
+option[value] {
+    width: 1em;
+}
+
+select {
+    width: 16em;
+    height: 2em;
+}
+
 /* class used for highlighting unfinished business */
 .problem {
     color: color(xyz 0.7 0 0.2);
@@ -188,6 +213,25 @@ footer {
 
     img {
         width: 450px;
+    }
+
+    input {
+        width: 1em;
+        height: 1em;
+    }
+
+    input[id] {
+        width: 12em;
+        height: 1em;
+    }
+
+    input[type="submit"] {
+        font-size: 0.8em;
+    }
+
+    select {
+        width: 8em;
+        height: 1.5em;
     }
 
     #navigation {
