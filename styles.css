@@ -204,7 +204,7 @@ p.link ~ p.link {
     justify-items: center;
 }
 
-/* makes sections with nav elements stick to the top of the page */
+/* styles sections with nav elements and makes them stick to the top of the page */
 section:has(nav) {
     position: sticky;
     top: 0;
