@@ -127,7 +127,7 @@ select {
     display: block;
 }
 
-.problem + p {
+p.problem + p {
     padding-bottom: 20px;
 }
 
@@ -141,14 +141,14 @@ select {
 }
 
 /* first navigaton links */
-.link {
+p.link {
     display: inline;
     margin-left: -15pt;
     margin-right: -15pt;
 }
 
 /* subsequent navigaton links */
-.link ~ .link {
+p.link ~ p.link {
     display: inline;
     margin-left: 2pt;
     margin-right: -15pt;
