@@ -1,21 +1,26 @@
+/* setting color themes to use throughout the document */
 :root {
     --outline-color: color-mix(in xyz, black, beige);
     --edge-color: #444;
     --background-color: rgb(255, 240, 192);
 }
 
+/* universal font for anything other than headings */
 * {
     font-family: "Georgia";
 }
 
+/* setting font size throughout document */
 html {
     font-size: 2rem;
 }
 
+/* background color */
 body {
     background-color: var(--background-color, rgb(255, 240, 192));
 }
 
+/* div styling to manage groups of content */
 div {
     background-color: rgba(253, 247, 229, 0.5);
     padding-left: 15px;
@@ -29,10 +34,12 @@ div {
     border-radius: 5px;
 }
 
+/* styling lines between divs */
 hr {
     border-color: var(--outline-color, color-mix(in xyz, black, beige));
 }
 
+/* main content spacing */
 main {
     margin-left: 10px;
     margin-right: 10px;
@@ -40,32 +47,39 @@ main {
     margin-bottom: 20px;
 }
 
+/* sets images to readable size on mobile */
 img {
     width: 800px;
 }
 
+/* spacing for text content */
 p, form {
     padding-left: 20px;
     padding-right: 20px;
 }
 
+/* spacing for lists */
 ol, ul {
     line-height: 1.5em;
 }
 
+/* spacing for details elements */
 details {
     margin-left: 20px;
     margin-right: 20px;
 }
 
+/* changes color when hovering over details elements */
 details:hover {
     background-color: #e6d9c2;
 }
 
+/* changes color when clicking on details elements */
 details:active {
     background-color: var(--outline-color, color-mix(in xyz, black, beige));
 }
 
+/* centers and sizes video and audio elements */
 video, audio {
     display: block;
     justify-content: center;
@@ -74,6 +88,7 @@ video, audio {
     max-width: 80vw;
 }
 
+/* sets header properties if it is a child of body */
 body header {
     background-color: var(--edge-color, #444);
     margin: -8px -8px -8px -8px;
@@ -85,6 +100,7 @@ body header {
     max-height: 450px;
 }
 
+/* sets footer properties and adds margin to button child */
 footer {
     background-color: var(--edge-color, #444);
     margin: -8px -8px -8px -8px;
@@ -96,26 +112,31 @@ footer {
     }
 }
 
+/* sizes input elements */
 input {
     width: 1.5em;
     height: 1.5em;
 }
 
+/* sizes input elements with an id attribute to be larger */
 input[id] {
     width: 24em;
     height: 2em;
 }
 
+/* sizes submit buttons to be larger and more readable */
 input[type="submit"] {
     width: 6em;
     height: 2em;
     font-size: 0.6em;
 }
 
+/* sizes option elements with value attributes */
 option[value] {
     width: 1em;
 }
 
+/* sizes select elements */
 select {
     width: 16em;
     height: 2em;
@@ -127,6 +148,7 @@ select {
     display: block;
 }
 
+/* adds spacing between problem paragraphs and subsequent paragraphs */
 p.problem + p {
     padding-bottom: 20px;
 }
@@ -166,6 +188,7 @@ p.link ~ p.link {
     margin-bottom: 20px;
 }
 
+/* adds flex properties to the image container in the diagram section */
 #imgflex {
     display: flex;
     flex-direction: row;
@@ -174,18 +197,21 @@ p.link ~ p.link {
     flex-shrink: 0;
 }
 
+/* adds grid properties to the media container in the brainsnacking section */
 #mediagrid {
     display: grid;
     gap: 20px;
     justify-items: center;
 }
 
+/* makes sections with nav elements stick to the top of the page */
 section:has(nav) {
     position: sticky;
     top: 0;
     background-color: var(--background-color, rgb(255, 240, 192));
 }
 
+/* media query to adjust sizing for larger screens (desktop) */
 @media (min-width: 1000px) {
     html {
         font-size: 1rem;
