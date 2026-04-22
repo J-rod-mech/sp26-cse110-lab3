@@ -12,6 +12,6 @@ End time: [end]
 ### Name [repeat for each attendee]
 - Progress: [what was done since last meeting]
 - Plans: [what will be done by next meeting]
-- Blockers: [anything issues to making progress]
+- Blockers: [any issues to making progress]
 
 ---
